@@ -12,3 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV PYTHONPATH=/app
 
 RUN pytest test/test_calculator.py
+
+CMD ["python", "main.py"]
